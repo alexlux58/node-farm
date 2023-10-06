@@ -1,7 +1,7 @@
 const axios = require("axios"); // Ensure to install axios via npm
 
 const dataURL =
-  "https://github.com/alexlux58/node-farm/blob/main/dev-data/data.json"; // Set this environment variable in your Netlify settings
+  "https://raw.githubusercontent.com/alexlux58/node-farm/main/dev-data/data.json"; // Set this environment variable in your Netlify settings
 
 exports.handler = async (event, context) => {
   try {

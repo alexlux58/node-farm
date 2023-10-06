@@ -4,9 +4,9 @@ const slugify = require("slugify");
 
 // URLs to your templates and data
 const tempProductURL =
-  "https://github.com/alexlux58/node-farm/blob/main/templates/template-product.html";
+  "https://raw.githubusercontent.com/alexlux58/node-farm/blob/main/templates/template-product.html";
 const dataURL =
-  "https://github.com/alexlux58/node-farm/blob/main/dev-data/data.json";
+  "https://raw.githubusercontent.com/alexlux58/node-farm/main/dev-data/data.json";
 
 exports.handler = async (event, context) => {
   const query = event.queryStringParameters;

@@ -11,13 +11,13 @@ exports.handler = async (event, context) => {
   try {
     const [tempOverviewRes, tempCardRes, dataRes] = await Promise.all([
       axios.get(
-        "https://github.com/alexlux58/node-farm/blob/main/templates/template-overview.html"
+        "https://raw.githubusercontent.com/alexlux58/node-farm/main/templates/template-overview.html"
       ),
       axios.get(
-        "https://github.com/alexlux58/node-farm/blob/main/templates/template-card.html"
+        "https://raw.githubusercontent.com/alexlux58/node-farm/main/templates/template-card.html"
       ),
       axios.get(
-        "https://github.com/alexlux58/node-farm/blob/main/dev-data/data.json"
+        "https://raw.githubusercontent.com/alexlux58/node-farm/main/dev-data/data.json"
       ),
     ]);
 
