@@ -1,3 +1,18 @@
 [build]
-  functions = "netlify/functions"
-  environment = { TEMPLATE_OVERVIEW_PATH = "templates/template-overview.html", TEMPLATE_CARD_PATH = "templates/template-card.html", TEMPLATE_PRODUCT_PATH = "templates/template-product.html" }
+  command = "npm run build"
+  functions = "netlify/functions-build"  # This is where built functions will be placed
+  publish = "public"
+
+[dev]
+  command = "npm run start"
+  publish = "public"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  TEMPLATE_OVERVIEW_PATH = "/templates/template-overview.html"
+  TEMPLATE_CARD_PATH = "/templates/template-card.html"
+  TEMPLATE_PRODUCT_PATH = "/templates/template-product.html"

@@ -10,8 +10,9 @@
   "author": "ALux",
   "license": "ISC",
   "dependencies": {
-    "slugify": "~1.6.5",
-    "netlify-lambda": "^2.0.3"
+    "axios": "^1.5.1",
+    "netlify-lambda": "^2.0.3",
+    "slugify": "~1.6.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
